@@ -1,0 +1,6 @@
+# Blender autosaves and backups
+*.blend[0-9]
+
+# Common
+# Sandbox folder for miscellenous stuff
+__sandbox__/
