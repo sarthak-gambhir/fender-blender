@@ -65,3 +65,45 @@ Some shapes can be derived out of basic meshes provided by blender.
   - Rotate one to 180 degrees and arrange to make edge come out of the center of
     the faces of the other tetrahedron.
   - Press `Ctrl + J` to join the meshes.
+
+## Modifiers
+
+### Boolean modifier
+
+The **Boolean Modifier** in Blender allows users to combine multiple meshes
+using Boolean operations. It is a powerful tool for modeling complex shapes by
+performing operations like **Union**, **Difference**, and **Intersect**.
+
+#### Boolean Operations
+
+- **Union**: Combines two objects into one, merging their geometry.
+- **Difference**: Subtracts one object from another, creating a cutout.
+- **Intersect**: Keeps only the overlapping volume of the objects.
+
+#### Operand Types
+
+- **Object**: Uses a single mesh object as the source.
+- **Collection**: Uses multiple objects from a collection.
+
+#### Solver Options
+
+- **Fast**: Provides quick results but lacks support for overlapping geometry.
+- **Exact**: More accurate but computationally expensive.
+
+#### Additional Features
+
+- **Self-Intersection Handling**: Improves results when objects intersect
+  themselves.
+- **Hole Tolerant Mode**: Optimizes Boolean operations for non-manifold
+  geometry.
+- **Material Transfer**: Allows materials to be mapped from the source object.
+
+#### How to Use
+
+1. Select the object you want to modify.
+2. Go to the **Modifiers** tab (wrench icon).
+3. Click **Add Modifier** and choose **Boolean**.
+4. Set the **Operation** type (Union, Difference, or Intersect).
+5. Select the **Operand Object** or **Collection**.
+6. Adjust solver settings for better results.
+7. Apply the modifier when satisfied.
